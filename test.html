@@ -9,44 +9,8 @@
                      "m":"audio/Piano.mf.B5.mp3", ",":"audio/Piano.mf.C6.mp3"};
       document.addEventListener("keydown", (event) => {
         const keyName = event.key;
-        switch (keyName) {
-          case "z":
-            var audio = new Audio("audio/Piano.mf.C5.mp3");
-            audio.play();
-            break;
-          case "x":
-            var audio = new Audio("audio/Piano.mf.D5.mp3");
-            audio.play();
-            break;
-          case "c":
-            var audio = new Audio("audio/Piano.mf.E5.mp3");
-            audio.play();
-            break;
-          case "v":
-            var audio = new Audio("audio/Piano.mf.F5.mp3");
-            audio.play();
-            break;
-          case "b":
-            var audio = new Audio("audio/Piano.mf.G5.mp3");
-            audio.play();
-            break;
-          case "g":
-            var audio = new Audio("audio/Piano.mf.Gb5.mp3");
-            audio.play();
-            break;
-          case "n":
-            var audio = new Audio("audio/Piano.mf.A5.mp3");
-            audio.play();
-            break;
-          case "m":
-            var audio = new Audio("audio/Piano.mf.B5.mp3");
-            audio.play();
-            break;
-            case ",":
-            var audio = new Audio("audio/Piano.mf.C6.mp3");
-            audio.play();
-            break;
-        }
+        var audio = new Audio(notes[keyName]);
+        audio.play();
       });
     </script>
   </head>
